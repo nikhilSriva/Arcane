@@ -35,8 +35,6 @@ export const Dashboard: React.FC = () => {
   useEffect(() => {
     const candidateData = getCandidate();
     const reference = getReferenceData();
-    console.log(reference);
-
     reconcile({ data: candidateData, reference });
   }, [reconcile]);
 
