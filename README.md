@@ -14,8 +14,6 @@ Your mission: dive into the code and uncover the culprit behind this bizarre beh
 
 ### Unveiling the Bug: The Key to the Fix
 
-After successfully navigating the eligibility check puzzle, the next step is to pinpoint the exact reason behind the application's strange behavior. Don't just jump to fixing the code! Your mission is to identify the root cause of the bug – the specific element in the code that's causing the unexpected results.
+You've identified the weirdness in the eligibility checks, but don't just jump in with a fix! The real challenge lies in uncovering the root cause, the sneaky bug making things wonky.
 
-Once you've identified the culprit, explain what's causing the issue and propose a solution that rectifies the problem. This will demonstrate your debugging prowess and understanding of the code's logic.
-
-This revised version emphasizes the importance of understanding the root cause, not just applying a quick fix. It also highlights the need for a clear explanation alongside the proposed solution.
+Think like a code detective. Isolate the culprit, understand why it's causing trouble, and then propose a solution that sets things straight. This is how you'll truly showcase your debugging mastery!
