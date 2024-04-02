@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
+### How to run
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* Clone the repo
+ * Run `yarn` to install dependencies 
+ * Run the server with `yarn dev`
 
-Currently, two official plugins are available:
+### Challenge: Eligibility Check Chaos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a single-page application designed to test your debugging skills. You'll be presented with candidate verification based on eligibility checks from two different sources. Each source has four individual checks, and initially, one check from each source appears passed.
 
-## Expanding the ESLint configuration
+Here's the twist: when you try to toggle the other checks, things get strange. There seems to be a bug in the code causing unexpected behavior.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Your mission: dive into the code and uncover the culprit behind this bizarre behavior. Identify the bug and understand why the application reacts the way it does.
 
-- Configure the top-level `parserOptions` property like this:
+### Unveiling the Bug: The Key to the Fix
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+After successfully navigating the eligibility check puzzle, the next step is to pinpoint the exact reason behind the application's strange behavior. Don't just jump to fixing the code! Your mission is to identify the root cause of the bug – the specific element in the code that's causing the unexpected results.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Once you've identified the culprit, explain what's causing the issue and propose a solution that rectifies the problem. This will demonstrate your debugging prowess and understanding of the code's logic.
+
+This revised version emphasizes the importance of understanding the root cause, not just applying a quick fix. It also highlights the need for a clear explanation alongside the proposed solution.
