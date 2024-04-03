@@ -10,14 +10,11 @@ export const Verifications: React.FC<Props> = ({ verifications, onChange }) => {
   const handleChange = (vIndex: number, cIndex: number, value: boolean) => {
     const v = structuredClone(verifications);
     /**
-     * Handles the change event for a verification check.
-     *
+     * Hint
+     * 
      * loash.cloneDeep does not work either.
      * const v = cloneDeep(verifications);
-     */
-    /**
-     * Handles the change event for a verification check.
-     *
+     * 
      * JSON stringify -> JSON Parse works.
      * const v = JSON.parse(JSON.stringify(verifications));
      */
