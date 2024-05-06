@@ -9,15 +9,7 @@ interface Props {
 export const Verifications: React.FC<Props> = ({ verifications, onChange }) => {
   const handleChange = (vIndex: number, cIndex: number, value: boolean) => {
     const v = structuredClone(verifications);
-    /**
-     * Hint
-     * 
-     * loash.cloneDeep does not work either.
-     * const v = cloneDeep(verifications);
-     * 
-     * JSON stringify -> JSON Parse works.
-     * const v = JSON.parse(JSON.stringify(verifications));
-     */
+    
     v[vIndex].eligibility.checks[cIndex].passed = value;
     onChange(v);
   };
