@@ -19,7 +19,7 @@ export const Dashboard: React.FC = () => {
               if (existing) {
                 return existing;
               }
-              return condition;
+              return {...condition}; //need to return a new cloned object here
             }),
           },
         };
