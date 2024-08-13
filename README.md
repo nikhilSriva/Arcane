@@ -1,3 +1,10 @@
+##Problem
+This is a reference copy issue. When we are creating the source data in reconcile, the checks object is not being newly created, hence there is this referential bug.
+
+###Fix
+Fixed this issue by creating a new copy of the checks object by using the ... (spread) operator right from the data source when it was created
+
+
 ### How to run
 
 * Clone the repo
