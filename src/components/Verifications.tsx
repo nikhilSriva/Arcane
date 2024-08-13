@@ -9,8 +9,11 @@ interface Props {
 export const Verifications: React.FC<Props> = ({ verifications, onChange }) => {
   const handleChange = (vIndex: number, cIndex: number, value: boolean) => {
     const v = structuredClone(verifications);
-    
-    v[vIndex].eligibility.checks[cIndex].passed = value;
+
+    v[vIndex].eligibility.checks[cIndex] = {
+      ...v[vIndex].eligibility.checks[cIndex],
+      passed: value
+    }
     onChange(v);
   };
 
